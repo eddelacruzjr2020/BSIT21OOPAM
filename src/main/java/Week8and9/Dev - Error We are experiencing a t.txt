@@ -1,0 +1,23 @@
+Dev - Error "We are experiencing a technical error." is displayed when creating alert. ct_fleet_add_alerts_notification_v2 API is failing
+
+Problem description:
+Error "We are experiencing a technical error." is displayed when creating alert. ct_fleet_add_alerts_notification_v2 API is failing
+Environment:
+fleetweb-* - vDevelopment JOB_ID=5723198 UTC:2026-04-16_18:17 FE=687f9c5 BE=43e11dd
+User (only if specific account)
+FTWD00001
+Steps to replicate:
+
+1. Login to Fleetweb PT Dev - CART00046
+2. Navigate to Notification
+3. Click Add Alert and select any alert type
+4. Fill up all required fields
+5. Click Add Alert
+
+Actual results:
+Error "We are experiencing a technical error." is displayed when creating alert. ct_fleet_add_alerts_notification_v2 API is failing
+
+Note: happening globally in dev environment
+
+Expected results:
+No error is displayed and able to create alert
