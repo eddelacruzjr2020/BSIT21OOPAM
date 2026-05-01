@@ -2,13 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package Week11;
+package Week13.Classes;
+
+import java.util.HashMap;
 
 /**
  *
  * @author Edmundo Dela Cruz
  */
-public class BikeBicycleMain {
+public class HashMapSample {
 
     /**
      * @param args the command line arguments
@@ -16,22 +18,18 @@ public class BikeBicycleMain {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Bike bike = new Bike();
-        bike.gear(4);
-        bike.speed(4);
-        bike.brake(3);
+        HashMap<String, String> make = new HashMap<String, String>();
         
-        System.out.println("Bike State is:");
-        bike.printStates();
+        make.put("Honda", "CBR");
+        make.put("Kawasaki", "Ninja");
+        make.put("Yamaha", "R1");
+        make.put("Honda", "CBR");
+        make.put("", "");
         
         
-        Bicycle bicycle = new Bicycle();
-        bicycle.gear(12);
-        bicycle.speed(12);
-        bicycle.brake(5);
+        System.out.println(make);
         
-        System.out.println("Bicycle State is:");
-        bicycle.printStates();
+        System.out.println(make.get("Kawasaki"));
     }
     
 }
